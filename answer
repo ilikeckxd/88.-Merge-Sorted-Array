@@ -1,0 +1,15 @@
+class Solution(object):
+    def merge(self, nums1, m, nums2, n):
+        """
+        :type nums1: List[int]
+        :type m: int
+        :type nums2: List[int]
+        :type n: int
+        :rtype: None Do not return anything, modify nums1 in-place instead.
+        """
+        nums1[:] = nums1[:m]              #記得nums1[:]
+        nums1.extend(nums2)
+        nums1.sort()
+        
+        #Runtime: 28 ms, faster than 49.20% of Python online submissions for Merge Sorted Array.
+#Memory Usage: 11.7 MB, less than 5.57% of Python online submissions for Merge Sorted Array.
